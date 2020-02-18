@@ -9,7 +9,7 @@ var myAge = prompt("Do you think my age is above 25?")
 switch (myAge.toLowerCase()) {
     case "no":
     case "n":
-        mark = mark+1;
+        mark = mark + 1;
         //console.log("You're right! my age is below 25.");
         console.log(mark);
 
@@ -21,7 +21,7 @@ switch (myAge.toLowerCase()) {
         //console.log("Wrong!");
         alert("Wrong!");
         break;
-        default: prompt("only yes/no or y/n");
+    default: prompt("only yes/no or y/n");
 
 }
 
@@ -44,7 +44,7 @@ switch (myHobby.toLowerCase()) {
         alert("You're right! I like drawing but I hate it at the same time :(");
         break;
 
-        default: prompt("only yes/no or y/n");
+    default: prompt("only yes/no or y/n");
 
 }
 
@@ -89,7 +89,7 @@ switch (sing.toLowerCase()) {
         alert("That' incorrect but I wish I could!");
         break;
 
-        default: prompt("only yes/no or y/n");
+    default: prompt("only yes/no or y/n");
 
 }
 
@@ -102,6 +102,7 @@ switch (music.toLowerCase()) {
 
         //console.log("That's true. I have 4 sisters and one brother.");
         alert("That's true. I have 4 sisters and one brother.");
+
         break;
 
     case "yes":
@@ -109,7 +110,8 @@ switch (music.toLowerCase()) {
         //console.log("That's wrong. I have 4 sisters and one brother.");
         alert("That's wrong. I have 4 sisters and one brother.");
         break;
-        default: prompt("only yes/no or y/n");
+        
+    default: prompt("only yes/no or y/n");
 
 }
 
@@ -137,29 +139,29 @@ if (myAge1 == 1996) {
 
 }
 
- 
 
 
-var countries=['KSA', 'Syria']
+
+var countries = ['KSA', 'Syria']
 var guess1 = prompt("What countries do you think I visited?");
 
 for (var d = 0; d < 7; d++) {
-    if (guess1 === "KSA" || guess1==="Syria") {
-    
-        alert("You're right. I've visited "+guess1); 
+    if (guess1 === "KSA" || guess1 === "Syria") {
+
+        alert("You're right. I've visited " + guess1);
         mark = mark + 1;
         console.log(mark);
 
-        break;      
+        break;
 
-    } else { 
-        guess1= prompt("TRY again!");        
+    } else {
+        guess1 = prompt("TRY again!");
 
     }
-  
-}  
+
+}
 
 
-alert("The countries that I have visited are "+countries);
-alert("Your mark is " + mark+ " out of 7");
+alert("The countries that I have visited are " + countries);
+alert("Your mark is " + mark + " out of 7");
 alert("Thanks " + yourName + " Make sure to comeback, I'll keep updating the Website!");
