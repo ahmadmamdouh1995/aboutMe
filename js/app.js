@@ -19,6 +19,7 @@ switch (myAge.toLowerCase()) {
 }
 
 
+
 var myHobby = prompt("Do you think I like drawing?")
 switch (myHobby.toLowerCase()) {
     case "no":
