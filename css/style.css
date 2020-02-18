@@ -74,6 +74,14 @@ ul{
 
 }
 
+p ol{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
 footer{
     background-color: darkgray;
     text-align: center;
