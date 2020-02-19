@@ -146,7 +146,7 @@ var countries = ['KSA', 'Syria']
 var guess1 = prompt("What countries do you think I visited?");
 
 for (var d = 0; d < 7; d++) {
-    if (guess1 === "KSA" || guess1 === "Syria") {
+    if (guess1 === countries[0] || guess1 === countries[1]) {
 
         alert("You're right. I've visited " + guess1);
         mark = mark + 1;
