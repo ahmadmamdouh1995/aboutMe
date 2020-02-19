@@ -94,7 +94,7 @@ switch (sing.toLowerCase()) {
 }
 
 var family = prompt("Do you think I am an only child?")
-switch (music.toLowerCase()) {
+switch (family.toLowerCase()) {
     case "no":
     case "n":
         mark = mark + 1;
@@ -110,7 +110,7 @@ switch (music.toLowerCase()) {
         //console.log("That's wrong. I have 4 sisters and one brother.");
         alert("That's wrong. I have 4 sisters and one brother.");
         break;
-        
+
     default: prompt("only yes/no or y/n");
 
 }
@@ -142,26 +142,51 @@ if (myAge1 == 1996) {
 
 
 
-var countries = ['KSA', 'Syria']
+// var countries = ['KSA', 'Syria']
+// var guess1 = prompt("What countries do you think I visited?");
+
+// for (var d = 0; d < 7; d++) {
+//     if (guess1 === countries[0] || guess1 === countries[1]) {
+
+//         alert("You're right. I've visited " + guess1);
+//         mark = mark + 1;
+//         console.log(mark);
+
+//         break;
+
+//     } else {
+//         guess1 = prompt("TRY again!");
+
+//     }
+
+// }
+
+
+var countries = ['KSA', 'Syria', 'Jordan']
 var guess1 = prompt("What countries do you think I visited?");
+var test = false;
 
-for (var d = 0; d < 7; d++) {
-    if (guess1 === countries[0] || guess1 === countries[1]) {
+for (var attempts = 0; attempts < 6; attempts++) {
 
-        alert("You're right. I've visited " + guess1);
-        mark = mark + 1;
-        console.log(mark);
+    var guess1 = prompt("What countries do you think I visited?");
 
-        break;
+    for (var i = 0; i < guess1.length; i++) {
+        if (countries = guess1[i]) {
+            alert("You're right. I've visited " + guess1);
+            mark = mark + 1;
+            console.log(mark);
+            test = true;
+            break;
 
-    } else {
-        guess1 = prompt("TRY again!");
-
+        }
+        if (test) {
+            guess1 = prompt("Try again!");
+        }
     }
-
 }
 
+    alert("The countries that I have visited are " + countries);
 
-alert("The countries that I have visited are " + countries);
-alert("Your mark is " + mark + " out of 7");
-alert("Thanks " + yourName + " Make sure to comeback, I'll keep updating the Website!");
+    alert("Your mark is " + mark + " out of 7");
+
+    alert("Thanks " + yourName + " Make sure to comeback, I'll keep updating the Website!");
